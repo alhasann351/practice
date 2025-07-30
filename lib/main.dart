@@ -1,6 +1,7 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:practice/screen/get_api_example.dart';
+import 'package:get/get.dart';
+import 'package:practice/resource/route/app_route.dart';
 
 void main() {
   runApp(
@@ -16,11 +17,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
-      home: const GetApiExample(),
+      getPages: AppRoute.appRoutes(),
     );
   }
 }
