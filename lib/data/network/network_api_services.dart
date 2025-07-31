@@ -40,7 +40,11 @@ class NetworkApiServices extends BaseApiServices {
     dynamic responseJson;
     try {
       final response = await http
-          .post(Uri.parse(url), body: jsonEncode(data))
+          .post(
+            Uri.parse(url),
+            body: jsonEncode(data),
+            headers: {'Content-Type': 'application/json'},
+          )
           .timeout(const Duration(seconds: 20));
       responseJson = returnResponse(response);
     } on SocketException {
