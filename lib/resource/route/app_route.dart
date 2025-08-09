@@ -4,6 +4,8 @@ import 'package:practice/view/cart/cart_screen.dart';
 import 'package:practice/view/home/products_screen.dart';
 import 'package:practice/view/splash_screen.dart';
 
+import '../../view/api_example/api_example_screen.dart';
+
 class AppRoute {
   static appRoutes() => [
     GetPage(
@@ -23,6 +25,12 @@ class AppRoute {
       transition: Transition.zoom,
       transitionDuration: const Duration(milliseconds: 500),
       page: () => CartScreen(),
+    ),
+    GetPage(
+      name: RouteName.apiExampleScreen,
+      transition: Transition.zoom,
+      transitionDuration: const Duration(milliseconds: 500),
+      page: () => ApiExampleScreen(),
     ),
   ];
 }

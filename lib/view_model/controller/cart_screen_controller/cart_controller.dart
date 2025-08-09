@@ -3,7 +3,7 @@ import 'package:practice/model/cart_screen_model/cart_model.dart';
 import 'package:practice/model/home_screen_model/products_model.dart';
 
 import '../../../data/response/status.dart';
-import '../../../model/cart_screen_model/cartItemModel.dart';
+import '../../../model/cart_screen_model/cart_item_model.dart';
 import '../../../repository/cart_screen_repository/cart_screen_repository.dart';
 
 class CartController extends GetxController {

@@ -1,14 +1,14 @@
-import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:practice/resource/route/app_route.dart';
 
 void main() {
   runApp(
-    DevicePreview(
+    const MyApp(),
+    /*DevicePreview(
       enabled: !const bool.fromEnvironment('dart.vm.product'),
       builder: (BuildContext context) => const MyApp(),
-    ),
+    ),*/
   );
 }
 
@@ -18,8 +18,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      locale: DevicePreview.locale(context),
-      builder: DevicePreview.appBuilder,
+      //locale: DevicePreview.locale(context),
+      //builder: DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
       getPages: AppRoute.appRoutes(),
     );
