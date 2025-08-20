@@ -4,4 +4,5 @@ class RouteName {
   static const String alarmScreen = '/alarm_screen';
   static const String productsScreen = '/products_screen';
   static const String cartScreen = '/cart_screen';
+  static const String pDesign = '/p_design';
 }

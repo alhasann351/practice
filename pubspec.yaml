@@ -73,6 +73,7 @@ flutter:
     - assets/place-town.ndjson
     - assets/ek_raat_vilen.mp3
     - assets/ring.mp3
+    - assets/mosjid.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
